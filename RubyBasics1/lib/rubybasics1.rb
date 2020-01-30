@@ -21,4 +21,21 @@ end
 # Part III
 def sum_to_n? arr, n
   # YOUR CODE HERE
+  if arr.length == 0
+    false
+  elsif arr.length == 1
+    false
+  elsif arr.length > 1
+    for x in arr
+      for y in arr[arr.index(x)+1..-1]
+        sum = x + y
+        equal = sum == n
+        break if equal
+      end
+      break if equal
+    end
+    equal
+  else
+    false
+  end
 end
