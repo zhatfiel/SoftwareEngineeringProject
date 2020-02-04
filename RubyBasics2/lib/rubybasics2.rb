@@ -9,6 +9,7 @@ end
 # Part II
 def starts_with_consonant? s
   # YOUR CODE HERE
+  s[0] =~ (/[^aeiouAEIOU#]/)
 end
 
 # Part III
