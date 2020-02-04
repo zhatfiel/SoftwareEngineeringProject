@@ -15,4 +15,13 @@ end
 # Part III
 def binary_multiple_of_4? s
   # YOUR CODE HERE
+  if s.empty?
+    return false
+  elsif s[0..-1] =~ (/[^01]/)
+    return false
+  elsif s.b.to_i % 4 == 0
+    return true
+  else
+    return false
+  end
 end
