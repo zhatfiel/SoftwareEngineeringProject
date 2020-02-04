@@ -17,7 +17,15 @@ end
 # Part II
 def array2d_2_hash contact_info, contacts
     # YOUR CODE HERE
-    
+    i = 0
+    if !contact_info[0].empty?
+        contacts.each do |key, value|
+            contacts[key] = {"email" => contact_info[i][0], "phone" => contact_info[i][1]}
+            i+=1
+        end
+    else
+        return contacts
+    end
 end
 
 # Part III
