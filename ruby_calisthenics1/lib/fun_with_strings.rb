@@ -9,7 +9,16 @@ module FunWithStrings
   end
   def count_words
     # your code here
-    
+    wordHash = Hash.new
+    wordArray = Array.new
+    temp1 = self.downcase
+    temp1 = temp1.delete "^a-z0-9", "^ "
+    wordArray = temp1.split
+    wordArray.each do |i|
+      count = wordArray.count(i)
+      wordHash[i] = count
+    end
+    return wordHash
   end
   def anagram_groups
     # your code here
