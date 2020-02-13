@@ -22,7 +22,23 @@ module FunWithStrings
   end
   def anagram_groups
     # your code here
-    
+    arrayOfGroups = Array.new
+    # return empty array if self is empty
+    return arrayOfGroups if self.empty?
+    wordArray = Array.new
+    temp1 = self.downcase
+    temp1 = temp1.delete "^a-z0-9", "^ "
+    wordArray = temp1.split
+    wordArray.each do |word|
+      var1 = "hello".split(%r{\s*})
+      var2 = "olleh".split(%r{\s*})
+      var1 = var1.sort
+      var2 = var2.sort
+      puts var1.to_s
+      puts var2.to_s
+      print "var1.eql?(var2): "
+      puts var1.eql?(var2)
+    end
   end
 end
 
