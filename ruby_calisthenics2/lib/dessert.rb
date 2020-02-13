@@ -8,9 +8,11 @@ class Dessert
   end
   def healthy?
     # your code here
+    true if self.calories < 200
   end
   def delicious?
     # your code here
+    true
   end
 end
 
