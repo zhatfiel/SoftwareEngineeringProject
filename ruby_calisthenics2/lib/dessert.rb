@@ -12,6 +12,7 @@ class Dessert
   end
   def delicious?
     # your code here
+    return false if self.name.match?(/licorice/)
     true
   end
 end
