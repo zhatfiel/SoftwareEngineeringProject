@@ -39,6 +39,9 @@ module FunWithStrings
       print "var1.eql?(var2): "
       puts var1.eql?(var2)
     end
+    #arr = self.split(" ")
+    #arr = arr.group_by{|x| x.each_char.sort}.values
+    #return arr
   end
 end
 

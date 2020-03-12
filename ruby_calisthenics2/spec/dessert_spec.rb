@@ -24,7 +24,7 @@ describe Dessert do
     end
   end
   
-  describe 'delicious and healthy', :disabled => true do
+  describe 'delicious and healthy' do
     describe '-cake' do
       before :each do
         @dessert = Dessert.new('cake', 400)
@@ -52,7 +52,7 @@ describe Dessert do
 end
 
 describe JellyBean do
-  describe 'JellyBean getters and setters', :disabled => true do
+  describe 'JellyBean getters and setters' do
     before(:each)  { @jellybean = JellyBean.new('vanilla') }
     
     it 'should contain 5 calories [2.5 points]' do
@@ -70,7 +70,7 @@ describe JellyBean do
     end
   end
   
-  describe 'modify delicious', :disabled => true do
+  describe 'modify delicious' do
     describe '-when non-licorice' do
       before :each do
         @jellybean = JellyBean.new('vanilla')
