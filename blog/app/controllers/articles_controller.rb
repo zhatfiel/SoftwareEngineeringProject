@@ -47,6 +47,35 @@ class ArticlesController < ApplicationController
        
        redirect_to articles_path
     end
+    
+    def sortA
+        copy = Article.all
+        temp = Array.new
+        copy.each do |article| 
+            temp.push(article.title)
+        end
+        temp = temp.sort
+        temp2 = Array.new(copy.length)
+        copy.each do |article| 
+            temp2[temp.index(article.title)] = article
+        end
+        @articlesSortA = temp2
+    end
+
+    def sortZ
+        copy = Article.all
+        temp = Array.new
+        copy.each do |article| 
+            temp.push(article.title)
+        end
+        temp = temp.sort
+        temp2 = Array.new(copy.length)
+        copy.each do |article| 
+            temp2[temp.index(article.title)] = article
+
+        end
+        @articlesSortZ = temp2.reverse
+    end
 end
 
 private
