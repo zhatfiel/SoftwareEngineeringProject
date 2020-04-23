@@ -9,6 +9,7 @@
     <tr>
         <th>Title</th>
         <th>Text</th>
+        <th>Date</th>
         <th>Author</th>
     </tr>
     
@@ -16,6 +17,7 @@
         <tr>
             <td><%= article.title %></td>
             <td><%= article.text %></td>
+            <td><%= article.updated_at %></td>
             <td>
                 <% if article.user %>
                     <%= article.user.name %>
