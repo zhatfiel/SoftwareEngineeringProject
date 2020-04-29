@@ -2,14 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 input[type=text] {
-    width: 50%;
+    width: 700px;
     padding: 12px 12px;
     border: 2px solid #ccc;
     background-color: #f8f8f8;
 }
 
 textarea {
-    width: 100%;
+    width: 700px;
     height: 300px;
     padding: 12px 12px;
     border: 2px solid #cc;
@@ -17,12 +17,24 @@ textarea {
     resize: none;
 }
 
-input[type=button], input[type=submit] {
-    background-color: #4CAF50;
-    float: right;
+input[type=button], input[type=submit]{
+    background-color: black;
+    float: left;
     border: none;
     color: white;
     padding: 16px 20px;
     text-decoration: none;
     cursor: pointer;
+    width: 150px;
+}
+
+h2, p {
+    color: black;
+}
+
+body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
