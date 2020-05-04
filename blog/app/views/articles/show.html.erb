@@ -3,6 +3,18 @@
     <%= @article.title %>
 </p>
 
+<p id="image">
+  <strong>Image:</strong><br>
+  <% if @article.image.present? %>
+  <%= image_tag @article.image_url %>
+  <% end %> 
+</p>
+
+<p>
+    <strong>Description:</strong>
+    <%= @article.description %>
+</p>
+
 <p>
     <strong>Text:</strong>
     <%= @article.text %>

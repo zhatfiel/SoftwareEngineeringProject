@@ -1,0 +1,6 @@
+<div>
+    <% if article.image_data? %>
+    <%= image_tag article.image_url %> 
+    <% end %>
+    <p><%= article.title %> | <%= link_to 'Show', show_article_path(article) %></p>
+</div>
