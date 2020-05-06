@@ -1,7 +1,7 @@
 require 'rails_helper.rb'
 
 feature"Blogger view an article" do
-    scenario "blogger successfully destroyes the new article page from the listing articles page" do
+    scenario "blogger successfully destroys the new article page from the listing articles page" do
         visit signup_path
         fill_in "user_name", with: "Adam Hill"
         fill_in "user_email", with: "ahill113@uncc.edu"
