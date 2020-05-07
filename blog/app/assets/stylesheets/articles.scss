@@ -22,15 +22,27 @@ input[type=button], input[type=submit]{
     float: left;
     border: none;
     color: white;
-    padding: 16px 20px;
+    padding: 20px 20px;
     text-decoration: none;
     cursor: pointer;
-    width: 150px;
+    width: 175px;
+    font-size: 16px;
 }
 
-h2, p {
+#title {
+    color: black;
+    font-size: 28px;
+}
+
+h2 {
     color: black;
 }
+
+p {
+    color: black;
+}
+
+
 
 body {
     display: block;
@@ -40,7 +52,8 @@ body {
 }
 
 img {
-    width: 700px;
-    max-width: 700px;
+    width: auto;
+    max-width: 400px;
     height: auto;
+    max-height: 400px;
 }

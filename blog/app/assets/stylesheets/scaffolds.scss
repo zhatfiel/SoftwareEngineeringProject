@@ -2,25 +2,29 @@ body {
   background-color: #fff;
   color: #000;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 18px;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 18px;
 }
 
 pre {
   background-color: #eee;
   padding: 10px;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 a {
   color: #000;
-
+  text-decoration: none;
+  padding: 3px;
+  background-color: white;
+  font-size: 18px;
+  
   &:visited {
     color: #000;
   }
@@ -33,6 +37,8 @@ a {
 
 th {
   padding-bottom: 5px;
+  color: black;
+  font-size: 18px;
 }
 
 td {
